@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o4D-Fo-FJ9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PaE-kb-v82">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -777,11 +777,72 @@
             </objects>
             <point key="canvasLocation" x="936.64122137404581" y="695.77464788732402"/>
         </scene>
+        <!--Proveedores-->
+        <scene sceneID="0BW-KB-oQX">
+            <objects>
+                <viewController id="X9p-U4-dw7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9f6-3u-XoX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brand01.png" translatesAutoresizingMaskIntoConstraints="NO" id="ODD-HK-soh">
+                                <rect key="frame" x="16" y="103" width="170" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brand04.png" translatesAutoresizingMaskIntoConstraints="NO" id="hG1-iC-sfX">
+                                <rect key="frame" x="16" y="410" width="361" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brand05.png" translatesAutoresizingMaskIntoConstraints="NO" id="cbn-Tc-rDZ">
+                                <rect key="frame" x="16" y="618" width="361" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brand02.png" translatesAutoresizingMaskIntoConstraints="NO" id="cMl-IZ-O3i">
+                                <rect key="frame" x="197" y="103" width="180" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brand03.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oce-8O-2pN">
+                                <rect key="frame" x="16" y="262" width="170" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GjD-IS-lVm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Proveedores" id="IXN-9Y-kB6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WC6-AQ-EKI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3543" y="1360"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K3Y-7t-6co">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PaE-kb-v82" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qzh-8W-b4w">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X9p-U4-dw7" kind="relationship" relationship="rootViewController" id="bVh-d7-GdC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RoW-HV-d2J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2615" y="1360"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
         <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
         <image name="bloqueo-alternativo.png" width="37.565216064453125" height="37.565216064453125"/>
+        <image name="brand01.png" width="320" height="225"/>
+        <image name="brand02.png" width="320" height="320"/>
+        <image name="brand03.png" width="320" height="267"/>
+        <image name="brand04.png" width="320" height="164"/>
+        <image name="brand05.png" width="320" height="116"/>
         <image name="cat.fill" catalog="system" width="128" height="102"/>
         <image name="circle.fill" catalog="system" width="128" height="123"/>
         <image name="doc.fill" catalog="system" width="115" height="128"/>
