@@ -247,13 +247,7 @@
                         <viewLayoutGuide key="safeArea" id="mjZ-pr-fKZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detalles" id="S76-zl-3X7">
-                        <barButtonItem key="rightBarButtonItem" title="Actualizar" image="highlighter" catalog="system" id="ZLy-Dj-uQ0">
-                            <connections>
-                                <action selector="editarDetalle:" destination="g00-UC-U93" id="lvD-J1-D1U"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Detalles" id="S76-zl-3X7"/>
                     <connections>
                         <outlet property="descripcionTextView" destination="uzX-fy-Hpc" id="oMi-s3-utX"/>
                         <outlet property="nombreTextField" destination="Zkh-lS-EyT" id="eym-Qs-Yqc"/>
@@ -852,7 +846,6 @@
         <image name="circle.fill" catalog="system" width="128" height="123"/>
         <image name="doc.fill" catalog="system" width="115" height="128"/>
         <image name="dog.fill" catalog="system" width="128" height="100"/>
-        <image name="highlighter" catalog="system" width="128" height="120"/>
         <image name="inventario.png" width="384" height="384"/>
         <image name="list.bullet" catalog="system" width="128" height="87"/>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
