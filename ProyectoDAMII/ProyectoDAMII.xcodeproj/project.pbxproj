@@ -23,6 +23,9 @@
 		B7684E4D2BE7088400C5CA7D /* PerrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7684E4C2BE7088400C5CA7D /* PerrosViewController.swift */; };
 		B7684E4F2BE7096F00C5CA7D /* PerroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7684E4E2BE7096F00C5CA7D /* PerroTableViewCell.swift */; };
 		B7684E512BE70D9600C5CA7D /* PerroDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7684E502BE70D9600C5CA7D /* PerroDetalleViewController.swift */; };
+		B7684E542BE7119000C5CA7D /* GatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7684E532BE7119000C5CA7D /* GatoViewController.swift */; };
+		B7684E582BE711C500C5CA7D /* GatoDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7684E572BE711C500C5CA7D /* GatoDetalleViewController.swift */; };
+		B7684E5A2BE711ED00C5CA7D /* GatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7684E592BE711ED00C5CA7D /* GatoTableViewCell.swift */; };
 		B780C1812BDEA12E00287A26 /* JuguetesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C1802BDEA12E00287A26 /* JuguetesViewController.swift */; };
 		B780C1832BDEA1C800287A26 /* JugueteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C1822BDEA1C800287A26 /* JugueteTableViewCell.swift */; };
 		B78D6B342BCADDDC00BC15A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D6B332BCADDDC00BC15A1 /* AppDelegate.swift */; };
@@ -53,6 +56,9 @@
 		B7684E4C2BE7088400C5CA7D /* PerrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerrosViewController.swift; sourceTree = "<group>"; };
 		B7684E4E2BE7096F00C5CA7D /* PerroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerroTableViewCell.swift; sourceTree = "<group>"; };
 		B7684E502BE70D9600C5CA7D /* PerroDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerroDetalleViewController.swift; sourceTree = "<group>"; };
+		B7684E532BE7119000C5CA7D /* GatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatoViewController.swift; sourceTree = "<group>"; };
+		B7684E572BE711C500C5CA7D /* GatoDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatoDetalleViewController.swift; sourceTree = "<group>"; };
+		B7684E592BE711ED00C5CA7D /* GatoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatoTableViewCell.swift; sourceTree = "<group>"; };
 		B780C1802BDEA12E00287A26 /* JuguetesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuguetesViewController.swift; sourceTree = "<group>"; };
 		B780C1822BDEA1C800287A26 /* JugueteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JugueteTableViewCell.swift; sourceTree = "<group>"; };
 		B78D6B302BCADDDC00BC15A1 /* ProyectoDAMII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoDAMII.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +156,9 @@
 				B78D6B472BCADF0800BC15A1 /* loginViewController.swift */,
 				B724C6FF2BD5858D00B40669 /* StockTrackerDataModel.xcdatamodeld */,
 				B7A5B29A2BE6F67700C83AA0 /* CategoriasViewController.swift */,
+				B7684E532BE7119000C5CA7D /* GatoViewController.swift */,
+				B7684E572BE711C500C5CA7D /* GatoDetalleViewController.swift */,
+				B7684E592BE711ED00C5CA7D /* GatoTableViewCell.swift */,
 			);
 			path = ProyectoDAMII;
 			sourceTree = "<group>";
@@ -236,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7684E5A2BE711ED00C5CA7D /* GatoTableViewCell.swift in Sources */,
 				B70A90002BE0654B002DCDB7 /* JugueteDetalleViewController.swift in Sources */,
 				B7A5B2992BE6F2E100C83AA0 /* AccionesViewController.swift in Sources */,
 				B7684E512BE70D9600C5CA7D /* PerroDetalleViewController.swift in Sources */,
@@ -249,6 +259,8 @@
 				B780C1812BDEA12E00287A26 /* JuguetesViewController.swift in Sources */,
 				B7684E4F2BE7096F00C5CA7D /* PerroTableViewCell.swift in Sources */,
 				B78D6B362BCADDDC00BC15A1 /* SceneDelegate.swift in Sources */,
+				B7684E542BE7119000C5CA7D /* GatoViewController.swift in Sources */,
+				B7684E582BE711C500C5CA7D /* GatoDetalleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
