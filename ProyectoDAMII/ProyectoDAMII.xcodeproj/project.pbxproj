@@ -20,6 +20,9 @@
 		B724C6F92BD5691B00B40669 /* dog-food-removebg-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = B724C6F42BD5691B00B40669 /* dog-food-removebg-preview.png */; };
 		B724C6FA2BD5691B00B40669 /* bloqueo-alternativo.png in Resources */ = {isa = PBXBuildFile; fileRef = B724C6F52BD5691B00B40669 /* bloqueo-alternativo.png */; };
 		B724C7012BD5858D00B40669 /* StockTrackerDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B724C6FF2BD5858D00B40669 /* StockTrackerDataModel.xcdatamodeld */; };
+		B7684E4D2BE7088400C5CA7D /* PerrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7684E4C2BE7088400C5CA7D /* PerrosViewController.swift */; };
+		B7684E4F2BE7096F00C5CA7D /* PerroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7684E4E2BE7096F00C5CA7D /* PerroTableViewCell.swift */; };
+		B7684E512BE70D9600C5CA7D /* PerroDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7684E502BE70D9600C5CA7D /* PerroDetalleViewController.swift */; };
 		B780C1812BDEA12E00287A26 /* JuguetesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C1802BDEA12E00287A26 /* JuguetesViewController.swift */; };
 		B780C1832BDEA1C800287A26 /* JugueteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780C1822BDEA1C800287A26 /* JugueteTableViewCell.swift */; };
 		B78D6B342BCADDDC00BC15A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D6B332BCADDDC00BC15A1 /* AppDelegate.swift */; };
@@ -47,6 +50,9 @@
 		B724C6F42BD5691B00B40669 /* dog-food-removebg-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dog-food-removebg-preview.png"; path = "img/dog-food-removebg-preview.png"; sourceTree = "<group>"; };
 		B724C6F52BD5691B00B40669 /* bloqueo-alternativo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bloqueo-alternativo.png"; path = "img/bloqueo-alternativo.png"; sourceTree = "<group>"; };
 		B724C7002BD5858D00B40669 /* StockTrackerDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StockTrackerDataModel.xcdatamodel; sourceTree = "<group>"; };
+		B7684E4C2BE7088400C5CA7D /* PerrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerrosViewController.swift; sourceTree = "<group>"; };
+		B7684E4E2BE7096F00C5CA7D /* PerroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerroTableViewCell.swift; sourceTree = "<group>"; };
+		B7684E502BE70D9600C5CA7D /* PerroDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerroDetalleViewController.swift; sourceTree = "<group>"; };
 		B780C1802BDEA12E00287A26 /* JuguetesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuguetesViewController.swift; sourceTree = "<group>"; };
 		B780C1822BDEA1C800287A26 /* JugueteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JugueteTableViewCell.swift; sourceTree = "<group>"; };
 		B78D6B302BCADDDC00BC15A1 /* ProyectoDAMII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoDAMII.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +86,16 @@
 			path = img;
 			sourceTree = "<group>";
 		};
+		B7684E522BE7112C00C5CA7D /* Perros */ = {
+			isa = PBXGroup;
+			children = (
+				B7684E4C2BE7088400C5CA7D /* PerrosViewController.swift */,
+				B7684E4E2BE7096F00C5CA7D /* PerroTableViewCell.swift */,
+				B7684E502BE70D9600C5CA7D /* PerroDetalleViewController.swift */,
+			);
+			path = Perros;
+			sourceTree = "<group>";
+		};
 		B78378722BE6A4E000BF3BE0 /* Juguetes */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +125,7 @@
 		B78D6B322BCADDDC00BC15A1 /* ProyectoDAMII */ = {
 			isa = PBXGroup;
 			children = (
+				B7684E522BE7112C00C5CA7D /* Perros */,
 				B704A91C2BE6CE06004D5164 /* brand01.png */,
 				B704A9192BE6CE06004D5164 /* brand02.png */,
 				B704A91D2BE6CE06004D5164 /* brand03.png */,
@@ -221,13 +238,16 @@
 			files = (
 				B70A90002BE0654B002DCDB7 /* JugueteDetalleViewController.swift in Sources */,
 				B7A5B2992BE6F2E100C83AA0 /* AccionesViewController.swift in Sources */,
+				B7684E512BE70D9600C5CA7D /* PerroDetalleViewController.swift in Sources */,
 				B78D6B482BCADF0800BC15A1 /* loginViewController.swift in Sources */,
 				B780C1832BDEA1C800287A26 /* JugueteTableViewCell.swift in Sources */,
+				B7684E4D2BE7088400C5CA7D /* PerrosViewController.swift in Sources */,
 				B7A5B29B2BE6F67700C83AA0 /* CategoriasViewController.swift in Sources */,
 				B78D6B382BCADDDC00BC15A1 /* ViewController.swift in Sources */,
 				B78D6B342BCADDDC00BC15A1 /* AppDelegate.swift in Sources */,
 				B724C7012BD5858D00B40669 /* StockTrackerDataModel.xcdatamodeld in Sources */,
 				B780C1812BDEA12E00287A26 /* JuguetesViewController.swift in Sources */,
+				B7684E4F2BE7096F00C5CA7D /* PerroTableViewCell.swift in Sources */,
 				B78D6B362BCADDDC00BC15A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
