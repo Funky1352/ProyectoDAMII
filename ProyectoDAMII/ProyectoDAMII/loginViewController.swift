@@ -25,5 +25,14 @@ class loginViewController: UIViewController {
             print("Usuario:",user)
             print("Clave:",pass)
         }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AccionesViewController") as! AccionesViewController
+        // Usando opcionales
+        // self.present(vc, animated: true, completion: nil)
+        // self.navigationController?.pushViewController(vc, animated: true)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
     }
+    
 }
