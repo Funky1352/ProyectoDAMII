@@ -16,18 +16,7 @@ class CategoriasViewController: UIViewController {
     }
     
 
-    @IBAction func abrirCategorias(_ sender: Any) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "JuguetesViewController") as! JuguetesViewController
-        // Usando opcionales
-        // self.present(vc, animated: true, completion: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
-        let navController = UINavigationController(rootViewController: vc)
-        //navController.modalPresentationStyle = .fullScreen
-        self.present(navController, animated: true, completion: nil)
-        
-    }
+
 
     /*
     // MARK: - Navigation

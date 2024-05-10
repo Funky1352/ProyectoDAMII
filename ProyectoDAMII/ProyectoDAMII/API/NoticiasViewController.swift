@@ -38,14 +38,14 @@ class NoticiasViewController: UIViewController, UITableViewDelegate, UITableView
         }*/
         return celda
     }
-/*    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tablaNoticias.deselectRow(at: indexPath, animated: true)
         
         guard let urlMostrar = URL(string: articulosNoticias[indexPath.row].url ?? "") else { return }
         let VCSS = SFSafariViewController(url: urlMostrar)
         present(VCSS, animated: true)
     }
-    */
+    
     var articulosNoticias : [Noticia] = []
 
     @IBOutlet weak var tablaNoticias: UITableView!
