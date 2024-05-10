@@ -27,9 +27,9 @@ class NoticiasViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tablaNoticias.dequeueReusableCell(withIdentifier: "celdaNoticia", for: indexPath)
-        celda.textLabel?.text = articulosNoticias[indexPath.row].title
-        celda.detailTextLabel?.text = articulosNoticias[indexPath.row].description
+        let celda = tablaNoticias.dequeueReusableCell(withIdentifier: "celdaNoticia", for: indexPath) as! CeldaNoticiasTableViewCell
+        celda.titulolabel.text = articulosNoticias[indexPath.row].title
+        celda.descripcionLabel.text = articulosNoticias[indexPath.row].description
         
         /*if let url = URL(string: articulosNoticias[indexPath.row].urlToImage ?? ""){
             if let imagenData = try? Data(contentsOf: url) {

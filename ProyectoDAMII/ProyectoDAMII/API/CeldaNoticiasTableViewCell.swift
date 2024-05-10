@@ -9,7 +9,9 @@ import UIKit
 
 class CeldaNoticiasTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titulolabel: UILabel!
     
+    @IBOutlet weak var descripcionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
