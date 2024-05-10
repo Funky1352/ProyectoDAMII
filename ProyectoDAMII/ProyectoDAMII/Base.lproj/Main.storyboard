@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="buJ-rO-zWZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XoF-SC-ozr">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -13,7 +13,7 @@
         <scene sceneID="VjY-qJ-7ca">
             <objects>
                 <viewController id="buJ-rO-zWZ" customClass="loginViewController" customModule="ProyectoDAMII" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3yl-jK-wPa">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="3yl-jK-wPa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -29,26 +29,27 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uh6-8d-2Ho">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uh6-8d-2Ho">
                                 <rect key="frame" x="55" y="328.66666666666674" width="282" height="314.33333333333326"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I6-gJ-A6N">
-                                        <rect key="frame" x="79" y="216.99999999999994" width="125" height="34.333333333333343"/>
+                                        <rect key="frame" x="79" y="217.00000000000006" width="125" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="rectangle.portrait.and.arrow.right" catalog="system" imagePlacement="trailing" title="Ingresar">
                                             <color key="baseBackgroundColor" red="0.70980392156862748" green="0.71764705882352942" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="ingresarButton:" destination="buJ-rO-zWZ" eventType="touchUpInside" id="LXX-WB-DqZ"/>
+                                            <segue destination="Wso-6z-Hdo" kind="show" id="R3V-Tg-bR8"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBy-Em-cL4">
-                                        <rect key="frame" x="37" y="59" width="208" height="34"/>
+                                        <rect key="frame" x="37" y="59.000000000000057" width="208" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su clave" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6NB-nC-W75">
-                                        <rect key="frame" x="36" y="127" width="208" height="34"/>
+                                        <rect key="frame" x="36" y="127.00000000000006" width="208" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
@@ -88,7 +89,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ttF-OQ-TTk">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ttF-OQ-TTk">
                                 <rect key="frame" x="123" y="745" width="148" height="16"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Derechos reservados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKD-u7-uhe">
@@ -119,6 +120,7 @@
                             <constraint firstItem="0yf-h0-aYb" firstAttribute="trailing" secondItem="ttF-OQ-TTk" secondAttribute="trailing" constant="122" id="zDZ-RZ-jpC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mME-lc-DOc"/>
                     <connections>
                         <outlet property="claveTextField" destination="6NB-nC-W75" id="eNI-to-ApT"/>
                         <outlet property="usuarioTextField" destination="NBy-Em-cL4" id="bmh-1T-T3h"/>
@@ -126,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51e-aM-VU2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.74045801526717" y="19.718309859154932"/>
+            <point key="canvasLocation" x="1040.4580152671756" y="19.718309859154932"/>
         </scene>
         <!--Detalles-->
         <scene sceneID="YQp-sQ-M0Z">
@@ -241,12 +243,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ii-6P-3cw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5627" y="20"/>
+            <point key="canvasLocation" x="6553.4351145038163" y="19.718309859154932"/>
         </scene>
         <!--Acciones-->
         <scene sceneID="TP0-7l-glN">
             <objects>
-                <viewController storyboardIdentifier="AccionesViewController" id="Wso-6z-Hdo" customClass="AccionesViewController" customModule="ProyectoDAMII" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccionesViewController" modalPresentationStyle="fullScreen" id="Wso-6z-Hdo" customClass="AccionesViewController" customModule="ProyectoDAMII" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p7r-Bw-SDp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,7 +257,7 @@
                                 <rect key="frame" x="-112" y="-277" width="616" height="488"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHJ-HY-bEl">
-                                <rect key="frame" x="42" y="70" width="309" height="95"/>
+                                <rect key="frame" x="42" y="114" width="309" height="51"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Gerardo Vega" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLL-Rp-NZf">
                                         <rect key="frame" x="0.0" y="8" width="309" height="53"/>
@@ -413,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDV-Gd-pjK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168.7022900763359" y="19.718309859154932"/>
+            <point key="canvasLocation" x="2095.419847328244" y="19.718309859154932"/>
         </scene>
         <!--Juguetes-->
         <scene sceneID="CrK-32-ILD">
@@ -540,18 +542,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsT-ph-MGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3859" y="20"/>
+            <point key="canvasLocation" x="4785.4961832061063" y="19.718309859154932"/>
         </scene>
         <!--Categorias View Controller-->
         <scene sceneID="9lF-jX-AXD">
             <objects>
                 <viewController id="p2Y-gI-Bef" customClass="CategoriasViewController" customModule="ProyectoDAMII" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xcw-dE-N26">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqH-fx-1OT">
-                                <rect key="frame" x="37" y="254" width="318" height="446"/>
+                                <rect key="frame" x="37" y="357" width="318" height="319"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T16-jo-KHX">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="155"/>
@@ -608,7 +610,7 @@
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nyg-mu-Chx">
-                                <rect key="frame" x="-524" y="-448" width="1440" height="666"/>
+                                <rect key="frame" x="-524" y="-448" width="1440" height="769"/>
                                 <color key="tintColor" red="0.4941176471" green="0.76862745099999996" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Categorias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aF-sj-Qnv">
@@ -638,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEy-aC-vtt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2177.8625954198474" y="19.718309859154932"/>
+            <point key="canvasLocation" x="3104.5801526717555" y="19.718309859154932"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4wR-TE-v9o">
@@ -656,14 +658,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28z-NU-bD7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4700" y="20"/>
+            <point key="canvasLocation" x="5626.7175572519081" y="19.718309859154932"/>
         </scene>
         <!--Proveedores-->
         <scene sceneID="0BW-KB-oQX">
             <objects>
                 <viewController id="X9p-U4-dw7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9f6-3u-XoX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brand01.png" translatesAutoresizingMaskIntoConstraints="NO" id="ODD-HK-soh">
@@ -712,7 +714,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HWa-D6-Lad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2932" y="20"/>
+            <point key="canvasLocation" x="3857.2519083969464" y="19.718309859154932"/>
         </scene>
         <!--Proveedores-->
         <scene sceneID="g1a-FA-o6J">
@@ -721,7 +723,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Proveedores" id="Re1-6K-PYa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a31-oB-u0U">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -738,11 +740,11 @@
             <objects>
                 <viewController storyboardIdentifier="PerroViewController" title="Perros" id="Qbn-8x-LrD" customClass="PerrosViewController" customModule="ProyectoDAMII" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ses-Bs-nQh">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XOa-2h-Brf">
-                                <rect key="frame" x="0.0" y="56" width="393" height="786"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="perroCell" rowHeight="89" id="wQ7-HC-VI5" customClass="PerroTableViewCell" customModule="ProyectoDAMII" customModuleProvider="target">
@@ -867,7 +869,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Yw9-xO-BXt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vhy-ZL-YeS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -884,11 +886,11 @@
             <objects>
                 <viewController title="Gatos" id="TLs-Me-ygj" customClass="GatoViewController" customModule="ProyectoDAMII" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bgG-99-mWN">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U1W-yq-QB9">
-                                <rect key="frame" x="0.0" y="56" width="393" height="786"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="gatoCell" rowHeight="89" id="uDZ-Lu-02V" customClass="GatoTableViewCell" customModule="ProyectoDAMII" customModuleProvider="target">
@@ -1013,7 +1015,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Jeo-sK-R9G"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oqh-8V-a3A">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1299,6 +1301,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yh3-9S-ifl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4700" y="1422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qlg-9M-YWy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XoF-SC-ozr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eQH-Kr-g9J">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="buJ-rO-zWZ" kind="relationship" relationship="rootViewController" id="3Ux-xS-SIi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUh-z6-vYc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="19.718309859154932"/>
         </scene>
     </scenes>
     <resources>

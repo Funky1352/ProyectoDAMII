@@ -37,6 +37,7 @@
 		B78D6B482BCADF0800BC15A1 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D6B472BCADF0800BC15A1 /* loginViewController.swift */; };
 		B7A5B2992BE6F2E100C83AA0 /* AccionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A5B2982BE6F2E100C83AA0 /* AccionesViewController.swift */; };
 		B7A5B29B2BE6F67700C83AA0 /* CategoriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A5B29A2BE6F67700C83AA0 /* CategoriasViewController.swift */; };
+		B7F8624B2BED97AE001C50AD /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F8624A2BED97AE001C50AD /* UtilityFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		B78D6B472BCADF0800BC15A1 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		B7A5B2982BE6F2E100C83AA0 /* AccionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccionesViewController.swift; sourceTree = "<group>"; };
 		B7A5B29A2BE6F67700C83AA0 /* CategoriasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasViewController.swift; sourceTree = "<group>"; };
+		B7F8624A2BED97AE001C50AD /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				B7684E532BE7119000C5CA7D /* GatoViewController.swift */,
 				B7684E572BE711C500C5CA7D /* GatoDetalleViewController.swift */,
 				B7684E592BE711ED00C5CA7D /* GatoTableViewCell.swift */,
+				B7F8624A2BED97AE001C50AD /* UtilityFunctions.swift */,
 			);
 			path = ProyectoDAMII;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				B78D6B342BCADDDC00BC15A1 /* AppDelegate.swift in Sources */,
 				B724C7012BD5858D00B40669 /* StockTrackerDataModel.xcdatamodeld in Sources */,
 				B780C1812BDEA12E00287A26 /* JuguetesViewController.swift in Sources */,
+				B7F8624B2BED97AE001C50AD /* UtilityFunctions.swift in Sources */,
 				B7684E4F2BE7096F00C5CA7D /* PerroTableViewCell.swift in Sources */,
 				B78D6B362BCADDDC00BC15A1 /* SceneDelegate.swift in Sources */,
 				B7684E542BE7119000C5CA7D /* GatoViewController.swift in Sources */,
